@@ -16,4 +16,6 @@ func main() {
 	routes.GetOrdersSearch(r)
 
 	routes.PostOrders(r)
+
+	routes.PatchOrders(r)
 }

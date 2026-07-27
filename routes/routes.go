@@ -21,3 +21,7 @@ func GetOrdersSearch(r *gin.Engine) {
 func PostOrders(r *gin.Engine) {
 	r.POST("/orders", handlers.PostOrdersHandler)
 }
+
+func PatchOrders(r *gin.Engine) {
+	r.PATCH("/orders/:id/status/:new_status", handlers.PatchOrderHandler)
+}
