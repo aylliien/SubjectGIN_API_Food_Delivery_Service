@@ -18,4 +18,6 @@ func main() {
 	routes.PostOrders(r)
 
 	routes.PatchOrders(r)
+
+	r.Run(":8080")
 }
